@@ -9,6 +9,10 @@ TagManager:
   - Mela
   - Pera
   - Banana
+  - CassaMele
+  - CassaPere
+  - CassaBanane
+  - Cassa
   layers:
   - Default
   - TransparentFX

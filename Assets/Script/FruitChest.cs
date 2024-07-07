@@ -9,4 +9,12 @@ public enum Tipo
 public class FruitChest : MonoBehaviour
 {
     public Tipo Chest;
+    public Inventory Manager;
+    private void OnTriggerEnter2D(Collider2D col)
+    {
+        if(col.gameObject.tag == "Frutto")
+        {
+            Manager.NumeroFrutti = Manager.NumeroFrutti + 1;
+        }
+    }
 }

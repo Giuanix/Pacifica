@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 3220876549206623482}
   m_Layer: 0
   m_Name: Banana
-  m_TagString: Untagged
+  m_TagString: Frutto
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -138,4 +138,3 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Frutta: 2
-  Manager: {fileID: 0}

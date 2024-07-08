@@ -10,8 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 4794819435257352432}
   - component: {fileID: 4794819435257352433}
-  - component: {fileID: 4794819435257352435}
   - component: {fileID: 4794819435257352434}
+  - component: {fileID: 4794819435257352435}
   - component: {fileID: 4794819435257352445}
   m_Layer: 0
   m_Name: CassaMele
@@ -87,6 +87,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &4794819435257352434
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4794819435257352438}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aeb35df8d1f170e40a6ca4d6a9ae5827, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Chest: 0
+  Manager: {fileID: 0}
 --- !u!61 &4794819435257352435
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -111,21 +125,8 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.4, y: 0.4}
   m_EdgeRadius: 0
---- !u!114 &4794819435257352434
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4794819435257352438}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aeb35df8d1f170e40a6ca4d6a9ae5827, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Chest: 0
 --- !u!50 &4794819435257352445
 Rigidbody2D:
   serializedVersion: 4

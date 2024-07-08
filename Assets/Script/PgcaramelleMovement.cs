@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Drag : MonoBehaviour
+public class PgcaramelleMovement : MonoBehaviour
 {
     private float startPosX;
     private float startPosY;
@@ -10,10 +10,10 @@ public class Drag : MonoBehaviour
 
     void Update()
     {
-        if(isBeingHeld == true)
+        if (isBeingHeld == true)
         {
             Vector3 mousePos;
-            mousePos = Input.mousePosition;
+            mousePos = new Vector3(Input.mousePosition.x, 300f, 0);
             mousePos = Camera.main.ScreenToWorldPoint(mousePos);
 
             this.gameObject.transform.localPosition = new Vector3(mousePos.x, mousePos.y, 0);
@@ -21,19 +21,18 @@ public class Drag : MonoBehaviour
     }
     private void OnMouseDown()
     {
-        if(Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(0))
         {
             Vector3 mousePos;
-            mousePos = Input.mousePosition;
+            mousePos = new Vector3(Input.mousePosition.x, 300f, 0);
             mousePos = Camera.main.ScreenToWorldPoint(mousePos);
-            
+
             isBeingHeld = true;
-        } 
+        }
     }
 
     private void OnMouseUp()
     {
-    
         isBeingHeld = false;
     }
 }

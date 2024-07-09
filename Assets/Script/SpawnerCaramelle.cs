@@ -6,6 +6,7 @@ public class SpawnerCaramelle : MonoBehaviour
 {
     public GameObject Caramella;
     public GameObject Peperoncino;
+    public GameObject MinigiocoCaramelle;
     public float RandomNum = 0;
     public float MaxTimer;
     private float Timer;

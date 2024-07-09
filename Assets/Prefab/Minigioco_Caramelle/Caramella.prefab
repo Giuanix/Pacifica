@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 4792235484657487656}
   m_Layer: 0
   m_Name: Caramella
-  m_TagString: Untagged
+  m_TagString: Caramella
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

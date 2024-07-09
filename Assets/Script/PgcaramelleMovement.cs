@@ -7,6 +7,7 @@ public class PgcaramelleMovement : MonoBehaviour
     private float startPosX;
     private float startPosY;
     private bool isBeingHeld = false;
+    public GameObject MinigiocoCaramelle;
 
     void Update()
     {
@@ -28,6 +29,18 @@ public class PgcaramelleMovement : MonoBehaviour
             mousePos = Camera.main.ScreenToWorldPoint(mousePos);
 
             isBeingHeld = true;
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D col)
+    {
+        if(col.gameObject.tag == "Caramella")
+        {
+            Debug.Log("Oee");
+        }
+        else if(col.gameObject.tag == "Peperoncino")
+        {
+            MinigiocoCaramelle.SetActive(false);
         }
     }
 

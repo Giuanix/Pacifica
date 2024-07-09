@@ -11,7 +11,6 @@ public class Inventory : MonoBehaviour
     void Start()
     {
         NumeroFrutti = 0;
-        MinigiocoCasse.SetActive(true);
     }
     void Update()
     {

@@ -9,6 +9,8 @@ TagManager:
   - Cassa
   - Frutto
   - DestroyBox
+  - Peperoncino
+  - Caramella
   layers:
   - Default
   - TransparentFX

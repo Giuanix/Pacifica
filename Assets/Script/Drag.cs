@@ -33,7 +33,6 @@ public class Drag : MonoBehaviour
 
     private void OnMouseUp()
     {
-    
         isBeingHeld = false;
     }
 }

@@ -395,6 +395,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 687047529250914053, guid: 75225d5ec1334904caad7ed83a33058d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -4.79
+      objectReference: {fileID: 0}
+    - target: {fileID: 3642782234553935866, guid: 75225d5ec1334904caad7ed83a33058d, type: 3}
+      propertyPath: GameManagerCaramelle
+      value: 
+      objectReference: {fileID: 2015523677}
     - target: {fileID: 7701260130419095902, guid: 75225d5ec1334904caad7ed83a33058d, type: 3}
       propertyPath: m_Name
       value: MINIGIOCO_CARAMELLE
@@ -442,6 +450,10 @@ PrefabInstance:
     - target: {fileID: 7701260130419095903, guid: 75225d5ec1334904caad7ed83a33058d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7701260130962465329, guid: 75225d5ec1334904caad7ed83a33058d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 75225d5ec1334904caad7ed83a33058d, type: 3}
@@ -498,8 +510,13 @@ MonoBehaviour:
   Caramella: {fileID: 4053971327087929341, guid: 2e6a6c86a24d7274daa45227b1e963da, type: 3}
   Peperoncino: {fileID: 4007969888476823354, guid: 77a5b68bd3de07c4e8480a5d689374ca, type: 3}
   MinigiocoCaramelle: {fileID: 1829323829}
+  PowerUp: {fileID: 0}
+  doOnce: 0
   RandomNum: 0
-  MaxTimer: 5
+  MaxSpawnTimer: 3
+  MinCadenzaTimer: 1
+  MaxCadenzaTimer: 15
+  Manager: {fileID: 0}
 --- !u!114 &2015523680
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -513,3 +530,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SpeedObjectModificato: -1
+  MaxTimer: 15

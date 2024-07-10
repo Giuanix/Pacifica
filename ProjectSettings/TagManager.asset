@@ -11,6 +11,7 @@ TagManager:
   - DestroyBox
   - Peperoncino
   - Caramella
+  - PowerUp
   layers:
   - Default
   - TransparentFX

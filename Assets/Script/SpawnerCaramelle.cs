@@ -6,19 +6,18 @@ public class SpawnerCaramelle : MonoBehaviour
 {
     public GameObject Caramella;
     public GameObject Peperoncino;
-    public GameObject MinigiocoCaramelle;
     public GameObject PowerUp;
+    public GameObject MinigiocoCaramelle;
     public bool doOnce = false;
     public float RandomNum = 0;
-
     public float MaxSpawnTimer;
     private float SpawnTimer;
-
     public float MinCadenzaTimer;
     public float MaxCadenzaTimer;
     private float CadenzaTimer;
+    [SerializeField] private float CadutaPowerUp;
 
-    public ObjectMovement Manager;
+    public SlotSalvataggioSpeedObject Manager;
 
     void Start()
     {
@@ -43,7 +42,7 @@ public class SpawnerCaramelle : MonoBehaviour
                 CadenzaTimer = MaxCadenzaTimer;
             }
         }
-        if(Manager.SpeedObject == 2.5f && !doOnce)
+        if(Manager.SpeedObjectModificato == CadutaPowerUp && !doOnce)
         {
             SpawnPowerUp();
             doOnce = true;

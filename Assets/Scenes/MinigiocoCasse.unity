@@ -187,9 +187,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 319318165453602379, guid: 57cbead9cf3fd9643a0a9b181ee03d3b, type: 3}
+      propertyPath: m_Maskable
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5413033991666074926, guid: 57cbead9cf3fd9643a0a9b181ee03d3b, type: 3}
       propertyPath: m_Name
       value: MINIGIOCO_CASSE
+      objectReference: {fileID: 0}
+    - target: {fileID: 6358582119290639372, guid: 57cbead9cf3fd9643a0a9b181ee03d3b, type: 3}
+      propertyPath: m_SortingOrder
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6358582119290639375, guid: 57cbead9cf3fd9643a0a9b181ee03d3b, type: 3}
       propertyPath: Manager
@@ -199,6 +207,14 @@ PrefabInstance:
       propertyPath: Manager
       value: 
       objectReference: {fileID: 1939511779}
+    - target: {fileID: 6358582119960599869, guid: 57cbead9cf3fd9643a0a9b181ee03d3b, type: 3}
+      propertyPath: m_SortingOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6358582120244806186, guid: 57cbead9cf3fd9643a0a9b181ee03d3b, type: 3}
+      propertyPath: m_SortingOrder
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6358582120244806190, guid: 57cbead9cf3fd9643a0a9b181ee03d3b, type: 3}
       propertyPath: Manager
       value: 

@@ -460,6 +460,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2015523678}
   - component: {fileID: 2015523679}
+  - component: {fileID: 2015523680}
   m_Layer: 0
   m_Name: GameManagerMinigiocoCaramelle
   m_TagString: Untagged
@@ -499,3 +500,16 @@ MonoBehaviour:
   MinigiocoCaramelle: {fileID: 1829323829}
   RandomNum: 0
   MaxTimer: 5
+--- !u!114 &2015523680
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2015523677}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f70dbfa8933b1fb44a4f21f9e80b7019, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SpeedObjectModificato: -1

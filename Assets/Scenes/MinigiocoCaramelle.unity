@@ -516,6 +516,7 @@ MonoBehaviour:
   MaxSpawnTimer: 3
   MinCadenzaTimer: 1
   MaxCadenzaTimer: 15
+  LimiteSpawnObject: 1
   CadutaPowerUp: -2.5
   Manager: {fileID: 2015523680}
 --- !u!114 &2015523680
@@ -530,5 +531,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f70dbfa8933b1fb44a4f21f9e80b7019, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SpeedObjectModificato: -1
-  MaxTimer: 15
+  SpeedObjectModificato: -1.4
+  MaxTimer: 12

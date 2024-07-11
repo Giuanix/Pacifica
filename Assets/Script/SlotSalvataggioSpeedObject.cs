@@ -8,12 +8,16 @@ public class SlotSalvataggioSpeedObject : MonoBehaviour
     private float Timer;
     public float MaxTimer;
 
+    void Start()
+    {
+        Timer = MaxTimer;  
+    }
     void Update()
     {
         Timer = Timer - Time.deltaTime;
         if (Timer <= 0)
         {
-            SpeedObjectModificato = SpeedObjectModificato - 0.1f;
+            SpeedObjectModificato = SpeedObjectModificato - 0.2f;
             Timer = MaxTimer;
         }
     }

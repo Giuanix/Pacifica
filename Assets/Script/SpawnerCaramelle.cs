@@ -4,20 +4,19 @@ using UnityEngine;
 
 public class SpawnerCaramelle : MonoBehaviour
 {
-    public GameObject Caramella;
-    public GameObject Peperoncino;
-    public GameObject PowerUp;
-    public GameObject MinigiocoCaramelle;
-    public bool doOnce = false;
-    public float RandomNum = 0;
-    public float MaxSpawnTimer;
+    [SerializeField] private GameObject Caramella;
+    [SerializeField] private GameObject Peperoncino;
+    [SerializeField] private GameObject PowerUp;
+    [SerializeField] private GameObject MinigiocoCaramelle;
+    [SerializeField] private float RandomNum = 0;
+    [SerializeField] private float MaxSpawnTimer;
     private float SpawnTimer;
-    public float MinCadenzaTimer;
-    public float MaxCadenzaTimer;
+    [SerializeField] private float MinCadenzaTimer;
+    [SerializeField] private float MaxCadenzaTimer;
     private float CadenzaTimer;
+    [SerializeField] private float LimiteSpawnSuAsseY;
     [SerializeField] private int LimiteSpawnObject;
     [SerializeField] private float CadutaPowerUp;
-
     public SlotSalvataggioSpeedObject Manager;
 
     void Start()
@@ -47,6 +46,7 @@ public class SpawnerCaramelle : MonoBehaviour
         {
             SpawnPowerUp();
             LimiteSpawnObject = LimiteSpawnObject + 1;
+            LimiteSpawnSuAsseY = LimiteSpawnSuAsseY + 3f;
             CadutaPowerUp = CadutaPowerUp + (-2.0f);
         }
     }
@@ -55,7 +55,7 @@ public class SpawnerCaramelle : MonoBehaviour
         for (int i = 0; i < LimiteSpawnObject; i++)
         {
             RandomNum = Random.Range(1, 3);
-            Vector3 randomPos = new Vector3(Random.Range(-2.2f, 2.2f),Random.Range(8f, 12f), 0);
+            Vector3 randomPos = new Vector3(Random.Range(-2.2f, 2.2f),Random.Range(8f, LimiteSpawnSuAsseY), 0);
             if (RandomNum == 1)
             {
                 Instantiate(Caramella, randomPos, Quaternion.identity);

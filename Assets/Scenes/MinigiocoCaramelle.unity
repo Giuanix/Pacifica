@@ -511,13 +511,13 @@ MonoBehaviour:
   Peperoncino: {fileID: 4007969888476823354, guid: 77a5b68bd3de07c4e8480a5d689374ca, type: 3}
   PowerUp: {fileID: 1005865012491983802, guid: 968bbfd41d3e76347b8d850977f13ec1, type: 3}
   MinigiocoCaramelle: {fileID: 1829323829}
-  doOnce: 0
   RandomNum: 0
   MaxSpawnTimer: 3
   MinCadenzaTimer: 1
   MaxCadenzaTimer: 15
+  LimiteSpawnSuAsseY: 12
   LimiteSpawnObject: 1
-  CadutaPowerUp: -2.5
+  CadutaPowerUp: -2.4
   Manager: {fileID: 2015523680}
 --- !u!114 &2015523680
 MonoBehaviour:

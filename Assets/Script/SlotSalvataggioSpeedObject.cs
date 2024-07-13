@@ -6,7 +6,7 @@ public class SlotSalvataggioSpeedObject : MonoBehaviour
 {
     public float SpeedObjectModificato = -1f;
     private float Timer;
-    public float MaxTimer;
+    [SerializeField] private float MaxTimer;
 
     void Start()
     {

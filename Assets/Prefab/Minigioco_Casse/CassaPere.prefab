@@ -125,7 +125,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aeb35df8d1f170e40a6ca4d6a9ae5827, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Chest: 1
+  Chest1: 1
+  Chest2: 5
   Manager: {fileID: 0}
 --- !u!50 &1622268146505270403
 Rigidbody2D:

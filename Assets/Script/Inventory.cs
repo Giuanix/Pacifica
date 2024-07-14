@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class Inventory : MonoBehaviour
@@ -7,18 +8,40 @@ public class Inventory : MonoBehaviour
     public int NumeroFrutti;
     public int TotNumeroFrutti;
     public GameObject MinigiocoCasse;
-    public SpawnerFrutta Manager;
+    public SpawnerFrutta ManagerSpawner;
+    public TimerMinigiocoCasse ManagerTimer;
+    public int ContatoreAumentoDiff;
     void Start()
     {
         NumeroFrutti = 0;
+        ContatoreAumentoDiff = 0;
     }
     void Update()
     {
-        if (NumeroFrutti == TotNumeroFrutti)
+        if (NumeroFrutti == TotNumeroFrutti && ManagerSpawner.AttivaProgressioneDiffUno == true)
         {
-            TotNumeroFrutti = TotNumeroFrutti + 1;
-            Manager.SpawnObjectRandom();
-            NumeroFrutti = 0;
-        }  
+            FunzioneProgressioneDiffUno();
+        }
+        else if (NumeroFrutti == TotNumeroFrutti && ManagerSpawner.AttivaProgressioneDiffDue == true)
+        {
+            FunzioneProgressioneDiffDue();
+        }
+    }
+
+    public void FunzioneProgressioneDiffUno()
+    {
+        TotNumeroFrutti = TotNumeroFrutti + 1;
+        ContatoreAumentoDiff = ContatoreAumentoDiff + 1;
+        ManagerSpawner.SpawnObjectRandom();
+        ManagerTimer.TimerMinigiocoCassa = ManagerTimer.MaxTimerMinigiocoCassa;
+        NumeroFrutti = 0;
+    }
+
+    public void FunzioneProgressioneDiffDue()
+    {
+        ContatoreAumentoDiff = ContatoreAumentoDiff + 1;
+        ManagerSpawner.SpawnObjectRandom();
+        ManagerTimer.TimerMinigiocoCassa = ManagerTimer.MaxTimerMinigiocoCassa;
+        NumeroFrutti = 0;
     }
 }

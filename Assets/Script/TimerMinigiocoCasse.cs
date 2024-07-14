@@ -6,8 +6,8 @@ using UnityEngine.UI;
 public class TimerMinigiocoCasse : MonoBehaviour
 {
     [SerializeField] private Image BarraTimerMinigiocoCassa;
-    private float TimerMinigiocoCassa;
-    [SerializeField] private float MaxTimerMinigiocoCassa;
+    public float TimerMinigiocoCassa;
+    public float MaxTimerMinigiocoCassa;
     void Start()
     {
         TimerMinigiocoCassa = MaxTimerMinigiocoCassa;

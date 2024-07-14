@@ -377,6 +377,10 @@ PrefabInstance:
       value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 4794819435257352434, guid: 5e203efe8ebb9d04a803052bbe3b3d3a, type: 3}
+      propertyPath: Chest2
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4794819435257352434, guid: 5e203efe8ebb9d04a803052bbe3b3d3a, type: 3}
       propertyPath: Manager
       value: 
       objectReference: {fileID: 0}
@@ -398,6 +402,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 3188680893739928308}
     m_Modifications:
+    - target: {fileID: 9146309921784911521, guid: 8e17e4ab3ff99534a8a6a81f21211b5d, type: 3}
+      propertyPath: Chest1
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 9146309921784911521, guid: 8e17e4ab3ff99534a8a6a81f21211b5d, type: 3}
+      propertyPath: Chest2
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 9146309921784911521, guid: 8e17e4ab3ff99534a8a6a81f21211b5d, type: 3}
       propertyPath: Manager
       value: 
@@ -468,6 +480,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 3188680893739928308}
     m_Modifications:
+    - target: {fileID: 1622268146505270400, guid: 0c27afb533d152840b5e0fb6298cfc3e, type: 3}
+      propertyPath: Chest1
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1622268146505270400, guid: 0c27afb533d152840b5e0fb6298cfc3e, type: 3}
+      propertyPath: Chest2
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 1622268146505270400, guid: 0c27afb533d152840b5e0fb6298cfc3e, type: 3}
       propertyPath: Manager
       value: 

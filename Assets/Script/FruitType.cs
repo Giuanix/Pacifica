@@ -9,7 +9,7 @@ public class FruitType : MonoBehaviour
     {
         if(col.gameObject.tag == "Cassa")
         {
-            if(col.gameObject.GetComponent<FruitChest>().Chest==Frutta)
+            if(col.gameObject.GetComponent<FruitChest>().Chest1==Frutta ||col.gameObject.GetComponent<FruitChest>().Chest2==Frutta)
             {
                 Destroy(gameObject);
             }

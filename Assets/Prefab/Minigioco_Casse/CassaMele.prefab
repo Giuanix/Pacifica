@@ -99,7 +99,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aeb35df8d1f170e40a6ca4d6a9ae5827, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Chest: 0
+  Chest1: 0
+  Chest2: 3
   Manager: {fileID: 0}
 --- !u!61 &4794819435257352435
 BoxCollider2D:

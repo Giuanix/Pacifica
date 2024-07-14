@@ -464,9 +464,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   NumeroFrutti: 0
-  TotNumeroFrutti: 10
+  TotNumeroFrutti: 8
   MinigiocoCasse: {fileID: 332076787}
-  Manager: {fileID: 0}
+  ManagerSpawner: {fileID: 1939511782}
+  ManagerTimer: {fileID: 1939511781}
+  ContatoreAumentoDiff: 0
 --- !u!4 &1939511780
 Transform:
   m_ObjectHideFlags: 0
@@ -495,7 +497,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   BarraTimerMinigiocoCassa: {fileID: 332076788}
-  MaxTimerMinigiocoCassa: 20
+  TimerMinigiocoCassa: 0
+  MaxTimerMinigiocoCassa: 25
 --- !u!114 &1939511782
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -511,8 +514,15 @@ MonoBehaviour:
   Mela: {fileID: 8054253640903906664, guid: 5e6912d220aabd7488f5175c29a690a1, type: 3}
   Pera: {fileID: 1885503243619375419, guid: 0197554665bc1924489766b84a27db41, type: 3}
   Banana: {fileID: 3220876549206623485, guid: b67db342f72ca8b4eb030bdf52b12fa5, type: 3}
+  MelaGialla: {fileID: 7067988882648056999, guid: ce120360006cf5e42becbc6e28943a6d, type: 3}
+  BananaVerde: {fileID: 997458898524287366, guid: 6fa6e39c42d0a464eb1e4440c9ad8fac, type: 3}
+  PeraRossa: {fileID: 5131896178168758503, guid: 6c76826dce90adc4581540de87c2d3fd, type: 3}
   Radius: 2.5
-  Manager: {fileID: 1939511779}
+  MaxContatoreAumentoDiff: 4
+  AttivaProgressioneDiffUno: 1
+  AttivaProgressioneDiffDue: 0
+  ManagerInventario: {fileID: 1939511779}
+  ManagerTimer: {fileID: 1939511781}
 --- !u!1001 &1968095460
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -523,6 +533,10 @@ PrefabInstance:
     - target: {fileID: 8557041104830928827, guid: 928b8b83f2eed2843a5cd74ca86a2960, type: 3}
       propertyPath: m_Name
       value: Puntatore
+      objectReference: {fileID: 0}
+    - target: {fileID: 8557041104830928827, guid: 928b8b83f2eed2843a5cd74ca86a2960, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8557041104830928829, guid: 928b8b83f2eed2843a5cd74ca86a2960, type: 3}
       propertyPath: m_RootOrder

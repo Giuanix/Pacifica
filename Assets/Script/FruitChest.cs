@@ -4,11 +4,12 @@ using UnityEngine;
 
 public enum Tipo
 {
-    Mela, Pera, Banana
+    Mela, Pera, Banana, MelaGialla, BananaVerde, PeraRossa
 }
 public class FruitChest : MonoBehaviour
 {
-    public Tipo Chest;
+    public Tipo Chest1;
+    public Tipo Chest2;
     public Inventory Manager;
     private void OnTriggerEnter2D(Collider2D col)
     {

@@ -4,23 +4,22 @@ using UnityEngine;
 
 public class SpawnerFrutta : MonoBehaviour
 {
-    public GameObject Mela;
-    public GameObject Pera;
-    public GameObject Banana;
-    public float Radius = 1;
-    public float RandomNum = 0;
-
+    [SerializeField] private GameObject Mela;
+    [SerializeField] private GameObject Pera;
+    [SerializeField] private GameObject Banana;
+    [SerializeField] private float Radius = 1;
+    private float RandomNum = 0;
     public Inventory Manager;
-    void Start()
+    void Update()
     {
         if(Manager.MinigiocoCasse == true)
         {
             SpawnObjectRandom();
         }
     }
-    void SpawnObjectRandom()
+    public void SpawnObjectRandom()
     {
-        for (int i = 0; i < 10; i++)
+        for (int i = 0; i < Manager.TotNumeroFrutti; i++)
         {
             RandomNum = Random.Range(1,4);
             Vector3 randomPos = Random.insideUnitCircle * Radius;

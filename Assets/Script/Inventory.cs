@@ -5,9 +5,9 @@ using UnityEngine;
 public class Inventory : MonoBehaviour
 {
     public int NumeroFrutti;
+    public int TotNumeroFrutti;
     public GameObject MinigiocoCasse;
-    [SerializeField] private int TotNumeroFrutti;
-
+    public SpawnerFrutta Manager;
     void Start()
     {
         NumeroFrutti = 0;
@@ -16,7 +16,9 @@ public class Inventory : MonoBehaviour
     {
         if (NumeroFrutti == TotNumeroFrutti)
         {
-            MinigiocoCasse.SetActive(false);
+            TotNumeroFrutti = TotNumeroFrutti + 1;
+            Manager.SpawnObjectRandom();
+            NumeroFrutti = 0;
         }  
     }
 }

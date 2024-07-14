@@ -5,17 +5,17 @@ using UnityEngine.UI;
 
 public class TimerMinigiocoCasse : MonoBehaviour
 {
-    public Image BarraTimerMinigiocoCassa;
-    public float TimerMinigiocoCassa;
-    public float MaxTimerTimerMinigiocoCassa;
+    [SerializeField] private Image BarraTimerMinigiocoCassa;
+    private float TimerMinigiocoCassa;
+    [SerializeField] private float MaxTimerMinigiocoCassa;
     void Start()
     {
-        TimerMinigiocoCassa = MaxTimerTimerMinigiocoCassa;
+        TimerMinigiocoCassa = MaxTimerMinigiocoCassa;
     }
     void Update()
     {
         TimerMinigiocoCassa -= Time.deltaTime;
-        BarraTimerMinigiocoCassa.fillAmount =(float)TimerMinigiocoCassa/MaxTimerTimerMinigiocoCassa;
+        BarraTimerMinigiocoCassa.fillAmount =(float)TimerMinigiocoCassa/MaxTimerMinigiocoCassa;
 
         if(TimerMinigiocoCassa <= 0f)
         {

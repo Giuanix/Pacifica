@@ -464,8 +464,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   NumeroFrutti: 0
-  MinigiocoCasse: {fileID: 332076787}
   TotNumeroFrutti: 10
+  MinigiocoCasse: {fileID: 332076787}
+  Manager: {fileID: 0}
 --- !u!4 &1939511780
 Transform:
   m_ObjectHideFlags: 0
@@ -494,8 +495,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   BarraTimerMinigiocoCassa: {fileID: 332076788}
-  TimerMinigiocoCassa: 0
-  MaxTimerTimerMinigiocoCassa: 20
+  MaxTimerMinigiocoCassa: 20
 --- !u!114 &1939511782
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -512,7 +512,6 @@ MonoBehaviour:
   Pera: {fileID: 1885503243619375419, guid: 0197554665bc1924489766b84a27db41, type: 3}
   Banana: {fileID: 3220876549206623485, guid: b67db342f72ca8b4eb030bdf52b12fa5, type: 3}
   Radius: 2.5
-  RandomNum: 0
   Manager: {fileID: 1939511779}
 --- !u!1001 &1968095460
 PrefabInstance:

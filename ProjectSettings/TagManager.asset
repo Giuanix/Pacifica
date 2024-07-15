@@ -12,6 +12,7 @@ TagManager:
   - Peperoncino
   - Caramella
   - PowerUp
+  - Ball
   layers:
   - Default
   - TransparentFX

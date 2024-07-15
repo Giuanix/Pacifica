@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
 public enum Tipo
 {
     Mela, Pera, Banana, MelaGialla, BananaVerde, PeraRossa

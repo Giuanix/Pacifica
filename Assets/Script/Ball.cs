@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Ball : MonoBehaviour
 {
+    [SerializeField] private GameObject GameOver;
+    [SerializeField] private GameObject Minigioco;
     [SerializeField] private float Speed;
     [SerializeField] private Rigidbody2D rb;
     [SerializeField] private GameObject Pg;
@@ -53,7 +55,8 @@ public class Ball : MonoBehaviour
         }
         if (col.gameObject.tag == "DestroyBox")
         {
-            Debug.Log("Game Over");
+            Time.timeScale = 0f;
+            
         }
     }
 }

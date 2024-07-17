@@ -5,7 +5,7 @@ using UnityEngine;
 public class Ball : MonoBehaviour
 {
     [SerializeField] private GameObject GameOver;
-    [SerializeField] private GameObject Minigioco;
+    [SerializeField] private GameObject MinigiocoPingPong;
     [SerializeField] private float Speed;
     [SerializeField] private Rigidbody2D rb;
     [SerializeField] private GameObject Pg;
@@ -18,6 +18,9 @@ public class Ball : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        Time.timeScale = 1f;
+        MinigiocoPingPong.SetActive(true);
+        GameOver.SetActive(false);
         Launch();
     }
     private void Update()
@@ -56,7 +59,8 @@ public class Ball : MonoBehaviour
         if (col.gameObject.tag == "DestroyBox")
         {
             Time.timeScale = 0f;
-            
+            MinigiocoPingPong.SetActive(false);
+            GameOver.SetActive(true);
         }
     }
 }

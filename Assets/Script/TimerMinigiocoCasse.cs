@@ -6,10 +6,15 @@ using UnityEngine.UI;
 public class TimerMinigiocoCasse : MonoBehaviour
 {
     [SerializeField] private Image BarraTimerMinigiocoCassa;
+    [SerializeField] private GameObject GameOver;
+    [SerializeField] private GameObject MinigiocoCasse;
     public float TimerMinigiocoCassa;
     public float MaxTimerMinigiocoCassa;
     void Start()
     {
+        Time.timeScale = 1f;
+        GameOver.SetActive(false);
+        MinigiocoCasse.SetActive(true);
         TimerMinigiocoCassa = MaxTimerMinigiocoCassa;
     }
     void Update()
@@ -19,7 +24,9 @@ public class TimerMinigiocoCasse : MonoBehaviour
 
         if(TimerMinigiocoCassa <= 0f)
         {
-            Debug.Log("Oe");
+            Time.timeScale = 0f;
+            GameOver.SetActive(true);
+            MinigiocoCasse.SetActive(false);
         }
     }
 }

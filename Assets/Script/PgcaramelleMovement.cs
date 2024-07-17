@@ -8,11 +8,18 @@ public class PgcaramelleMovement : MonoBehaviour
     private float startPosY;
     private bool isBeingHeld = false;
     public GameObject MinigiocoCaramelle;
-    public GameObject GameManagerCaramelle;
+    public GameObject SpawnCaramelle;
+    public GameObject GameOver;
     private bool SwitchScale = false;
     public float MaxSwitchTimer;
     private float SwitchTimer;
-
+    void Start()
+    {
+        Time.timeScale = 1f;
+        MinigiocoCaramelle.SetActive(true);
+        SpawnCaramelle.SetActive(true);
+        GameOver.SetActive(false);
+    }
     void Update()
     {
         if (isBeingHeld == true)
@@ -54,8 +61,10 @@ public class PgcaramelleMovement : MonoBehaviour
         }
         else if(col.gameObject.tag == "Peperoncino")
         {
+            Time.timeScale = 0f;
             MinigiocoCaramelle.SetActive(false);
-            GameManagerCaramelle.SetActive(false);
+            SpawnCaramelle.SetActive(false);
+            GameOver.SetActive(true);
         }
         else if(col.gameObject.tag == "PowerUp")
         {

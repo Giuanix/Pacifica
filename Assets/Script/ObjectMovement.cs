@@ -8,7 +8,6 @@ public class ObjectMovement : MonoBehaviour
     void Start()
     {
         Manager = GameObject.Find("GameManagerMinigiocoCaramelle").GetComponent<SlotSalvataggioSpeedObject>();
-       
     }
     void Update()
     {

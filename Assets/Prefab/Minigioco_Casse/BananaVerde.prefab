@@ -29,7 +29,7 @@ Transform:
   m_GameObject: {fileID: 997458898524287366}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.74711365, y: 0.74711365, z: 0.74711365}
+  m_LocalScale: {x: 0.12, y: 0.12, z: 0.12}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -76,8 +76,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -9095717837082945937, guid: bd3cb4af8406d4436a2ae8c2aafe1f8d, type: 3}
-  m_Color: {r: 0.02745098, g: 1, b: 0, a: 1}
+  m_Sprite: {fileID: 21300000, guid: a062d09ca84f5584b94251b5e0c5d8c2, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -112,6 +112,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Frutta: 4
+  Manager: {fileID: 0}
+  ManagerScore: {fileID: 0}
 --- !u!58 &5985161048982147319
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -125,6 +127,6 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 1, y: -1.65}
   serializedVersion: 2
-  m_Radius: 0.4
+  m_Radius: 2.6

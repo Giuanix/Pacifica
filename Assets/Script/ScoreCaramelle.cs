@@ -4,7 +4,7 @@ using UnityEngine;
 using TMPro;
 public class ScoreCaramelle : MonoBehaviour
 {
-    public int TotScore; //variabile che contiene lo score totalizzato
+    public float TotScore; //variabile che contiene lo score totalizzato
     public TMP_Text ScorePartita; //variabile di tipo testo
     public TMP_Text ScoreFinePartita;
     void Start()
@@ -15,5 +15,10 @@ public class ScoreCaramelle : MonoBehaviour
     {
         ScorePartita.text = TotScore.ToString();
         ScoreFinePartita.text = TotScore.ToString();
+
+        if(TotScore >= RecordScore.RecordScoreCaramelle)
+        {
+            RecordScore.RecordScoreCaramelle = TotScore;
+        }
     }
 }

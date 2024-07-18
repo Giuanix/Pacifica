@@ -321,6 +321,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fa028a8954109494b8f1f792062d94b7, type: 3}
+--- !u!114 &800018764 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 942518049644531751, guid: fa028a8954109494b8f1f792062d94b7, type: 3}
+  m_PrefabInstance: {fileID: 800018763}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &914928035 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2966956493861731018, guid: 75225d5ec1334904caad7ed83a33058d, type: 3}
@@ -537,6 +548,14 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3169279983979032217, guid: 75225d5ec1334904caad7ed83a33058d, type: 3}
+      propertyPath: m_Name
+      value: Score
+      objectReference: {fileID: 0}
+    - target: {fileID: 3642782234553935866, guid: 75225d5ec1334904caad7ed83a33058d, type: 3}
+      propertyPath: Manager
+      value: 
+      objectReference: {fileID: 2015523683}
     - target: {fileID: 3642782234553935866, guid: 75225d5ec1334904caad7ed83a33058d, type: 3}
       propertyPath: GameOver
       value: 
@@ -608,6 +627,17 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 7701260130419095902, guid: 75225d5ec1334904caad7ed83a33058d, type: 3}
   m_PrefabInstance: {fileID: 1829323828}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1829323830 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4027055441055544328, guid: 75225d5ec1334904caad7ed83a33058d, type: 3}
+  m_PrefabInstance: {fileID: 1829323828}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1839734151
 GameObject:
   m_ObjectHideFlags: 0
@@ -676,6 +706,7 @@ GameObject:
   - component: {fileID: 2015523680}
   - component: {fileID: 2015523681}
   - component: {fileID: 2015523682}
+  - component: {fileID: 2015523683}
   m_Layer: 0
   m_Name: GameManagerMinigiocoCaramelle
   m_TagString: Untagged
@@ -738,3 +769,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ccce789f0c39be7439f71937cd6b6939, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &2015523683
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2015523677}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71000747861c996409a648794f3efc32, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TotScore: 0
+  ScorePartita: {fileID: 1829323830}
+  ScoreFinePartita: {fileID: 800018764}

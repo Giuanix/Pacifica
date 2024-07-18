@@ -13,6 +13,7 @@ public class PgcaramelleMovement : MonoBehaviour
     private bool SwitchScale = false;
     public float MaxSwitchTimer;
     private float SwitchTimer;
+    public ScoreCaramelle Manager;
     void Start()
     {
         Time.timeScale = 1f;
@@ -57,7 +58,7 @@ public class PgcaramelleMovement : MonoBehaviour
     {
         if(col.gameObject.tag == "Caramella")
         {
-            Debug.Log("Oee");
+            Manager.TotScore = Manager.TotScore + 1;
         }
         else if(col.gameObject.tag == "Peperoncino")
         {

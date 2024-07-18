@@ -15,6 +15,7 @@ public class Ball : MonoBehaviour
     private float x;
     private float y;
     [SerializeField] private float DimensioneX = 1.5f;
+    public ScorePingPong Manager;
     // Start is called before the first frame update
     void Start()
     {
@@ -25,7 +26,7 @@ public class Ball : MonoBehaviour
     }
     private void Update()
     {
-        if(Speed == 8f)
+        if(Speed == 12f)
         {
             AumentoSpeed = false;
             DiminuisciPlayer = true;
@@ -45,6 +46,10 @@ public class Ball : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D col)
     {
+        if(col.gameObject.tag == "Player")
+        {
+            Manager.TotScore = Manager.TotScore + 1;
+        }
         if (col.gameObject.tag == "Player" && AumentoSpeed == true)
         {
             Speed = Speed + 0.5f;

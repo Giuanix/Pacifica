@@ -69,12 +69,11 @@ public class PgcaramelleMovement : MonoBehaviour
         }
         else if(col.gameObject.tag == "PowerUp")
         {
-            transform.localScale = new Vector3(1.5f, 1.5f, 0);
+            transform.localScale = new Vector3(0.125f, 0.125f, 0);
             SwitchTimer = MaxSwitchTimer;
             SwitchScale = true;
         }
     }
-
     private void OnMouseUp()
     {
         isBeingHeld = false;

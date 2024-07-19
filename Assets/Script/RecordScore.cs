@@ -12,7 +12,12 @@ public class RecordScore : MonoBehaviour
     public TMP_Text TXTRecordScoreCasse;
     void Update()
     {
-        TXTRecordScoreCasse.text = RecordScoreCaramelle.ToString();
+        if (TXTRecordScoreCaramelle == null)
+        {
+            return;
+        }
+
+        TXTRecordScoreCaramelle.text = RecordScoreCaramelle.ToString();
         TXTRecordScorePingPong.text = RecordScorePingPong.ToString();
         TXTRecordScoreCasse.text = RecordScoreCasse.ToString();
     }

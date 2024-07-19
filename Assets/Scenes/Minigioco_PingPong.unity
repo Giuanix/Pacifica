@@ -435,6 +435,7 @@ GameObject:
   - component: {fileID: 1508265808}
   - component: {fileID: 1508265807}
   - component: {fileID: 1508265809}
+  - component: {fileID: 1508265810}
   m_Layer: 0
   m_Name: GameManagerMinigiocoPingPong
   m_TagString: Untagged
@@ -484,6 +485,21 @@ MonoBehaviour:
   TotScore: 0
   ScorePartita: {fileID: 1408441496}
   ScoreFinePartita: {fileID: 589136466}
+--- !u!114 &1508265810
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1508265806}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9eb156cd4d210a84abf315d6a82e537b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TXTRecordScoreCaramelle: {fileID: 0}
+  TXTRecordScorePingPong: {fileID: 0}
+  TXTRecordScoreCasse: {fileID: 0}
 --- !u!1 &1928971294 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2658316015107536954, guid: 27a5dae44e417a148b3dc71ddf98f15a, type: 3}

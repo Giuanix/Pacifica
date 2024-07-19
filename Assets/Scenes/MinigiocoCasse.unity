@@ -206,6 +206,46 @@ PrefabInstance:
       propertyPath: m_AdditionalShaderChannelsFlag
       value: 25
       objectReference: {fileID: 0}
+    - target: {fileID: 1659303423565608330, guid: 57cbead9cf3fd9643a0a9b181ee03d3b, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1659303423565608330, guid: 57cbead9cf3fd9643a0a9b181ee03d3b, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1659303423565608330, guid: 57cbead9cf3fd9643a0a9b181ee03d3b, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1659303423565608330, guid: 57cbead9cf3fd9643a0a9b181ee03d3b, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1659303423565608330, guid: 57cbead9cf3fd9643a0a9b181ee03d3b, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1659303423565608330, guid: 57cbead9cf3fd9643a0a9b181ee03d3b, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2719654594362236329, guid: 57cbead9cf3fd9643a0a9b181ee03d3b, type: 3}
+      propertyPath: m_Color.b
+      value: 0.7075472
+      objectReference: {fileID: 0}
+    - target: {fileID: 2719654594362236329, guid: 57cbead9cf3fd9643a0a9b181ee03d3b, type: 3}
+      propertyPath: m_Color.g
+      value: 0.33840793
+      objectReference: {fileID: 0}
+    - target: {fileID: 2719654594362236329, guid: 57cbead9cf3fd9643a0a9b181ee03d3b, type: 3}
+      propertyPath: m_Color.r
+      value: 0.23696157
+      objectReference: {fileID: 0}
+    - target: {fileID: 4904923135225618293, guid: 57cbead9cf3fd9643a0a9b181ee03d3b, type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 5413033991666074926, guid: 57cbead9cf3fd9643a0a9b181ee03d3b, type: 3}
       propertyPath: m_Name
       value: MINIGIOCO_CASSE
@@ -234,6 +274,10 @@ PrefabInstance:
       propertyPath: Manager
       value: 
       objectReference: {fileID: 1939511779}
+    - target: {fileID: 6727414731437763372, guid: 57cbead9cf3fd9643a0a9b181ee03d3b, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7480851511817621678, guid: 57cbead9cf3fd9643a0a9b181ee03d3b, type: 3}
       propertyPath: m_RootOrder
       value: 5
@@ -572,6 +616,7 @@ GameObject:
   - component: {fileID: 1939511783}
   - component: {fileID: 1939511784}
   - component: {fileID: 1939511785}
+  - component: {fileID: 1939511786}
   m_Layer: 0
   m_Name: GameManagerMinigiocoCasse
   m_TagString: Untagged
@@ -694,6 +739,21 @@ MonoBehaviour:
   TotScore: 0
   ScorePartita: {fileID: 315720656}
   ScoreFinePartita: {fileID: 1958718988}
+--- !u!114 &1939511786
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1939511778}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9eb156cd4d210a84abf315d6a82e537b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TXTRecordScoreCaramelle: {fileID: 0}
+  TXTRecordScorePingPong: {fileID: 0}
+  TXTRecordScoreCasse: {fileID: 0}
 --- !u!114 &1958718988 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 942518049644531751, guid: fa028a8954109494b8f1f792062d94b7, type: 3}

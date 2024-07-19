@@ -568,6 +568,14 @@ PrefabInstance:
       propertyPath: GameManagerCaramelle
       value: 
       objectReference: {fileID: 2015523677}
+    - target: {fileID: 6643758058427116525, guid: 75225d5ec1334904caad7ed83a33058d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 37.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6643758058427116525, guid: 75225d5ec1334904caad7ed83a33058d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 6.2
+      objectReference: {fileID: 0}
     - target: {fileID: 7701260130419095902, guid: 75225d5ec1334904caad7ed83a33058d, type: 3}
       propertyPath: m_Name
       value: MINIGIOCO_CARAMELLE
@@ -707,6 +715,7 @@ GameObject:
   - component: {fileID: 2015523681}
   - component: {fileID: 2015523682}
   - component: {fileID: 2015523683}
+  - component: {fileID: 2015523684}
   m_Layer: 0
   m_Name: GameManagerMinigiocoCaramelle
   m_TagString: Untagged
@@ -784,3 +793,18 @@ MonoBehaviour:
   TotScore: 0
   ScorePartita: {fileID: 1829323830}
   ScoreFinePartita: {fileID: 800018764}
+--- !u!114 &2015523684
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2015523677}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9eb156cd4d210a84abf315d6a82e537b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TXTRecordScoreCaramelle: {fileID: 0}
+  TXTRecordScorePingPong: {fileID: 0}
+  TXTRecordScoreCasse: {fileID: 0}

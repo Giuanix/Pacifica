@@ -15,5 +15,10 @@ public class ScoreCasse : MonoBehaviour
     {
         ScorePartita.text = TotScore.ToString();
         ScoreFinePartita.text = TotScore.ToString();
+
+        if(TotScore >= RecordScore.RecordScoreCasse)
+        {
+            RecordScore.RecordScoreCasse = TotScore;
+        }
     }
 }

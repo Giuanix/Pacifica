@@ -252,7 +252,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6358582119290639372, guid: 57cbead9cf3fd9643a0a9b181ee03d3b, type: 3}
       propertyPath: m_SortingOrder
-      value: 0
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 6358582119290639375, guid: 57cbead9cf3fd9643a0a9b181ee03d3b, type: 3}
       propertyPath: Manager
@@ -277,6 +277,18 @@ PrefabInstance:
     - target: {fileID: 6727414731437763372, guid: 57cbead9cf3fd9643a0a9b181ee03d3b, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7341778753775059176, guid: 57cbead9cf3fd9643a0a9b181ee03d3b, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 23.979595
+      objectReference: {fileID: 0}
+    - target: {fileID: 7341778753775059176, guid: 57cbead9cf3fd9643a0a9b181ee03d3b, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 23.979595
+      objectReference: {fileID: 0}
+    - target: {fileID: 7341778753775059176, guid: 57cbead9cf3fd9643a0a9b181ee03d3b, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 23.979595
       objectReference: {fileID: 0}
     - target: {fileID: 7480851511817621678, guid: 57cbead9cf3fd9643a0a9b181ee03d3b, type: 3}
       propertyPath: m_RootOrder
@@ -321,6 +333,18 @@ PrefabInstance:
     - target: {fileID: 7480851511817621678, guid: 57cbead9cf3fd9643a0a9b181ee03d3b, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8217972743210025135, guid: 57cbead9cf3fd9643a0a9b181ee03d3b, type: 3}
+      propertyPath: m_Color.b
+      value: 0.1457814
+      objectReference: {fileID: 0}
+    - target: {fileID: 8217972743210025135, guid: 57cbead9cf3fd9643a0a9b181ee03d3b, type: 3}
+      propertyPath: m_Color.g
+      value: 0.2725711
+      objectReference: {fileID: 0}
+    - target: {fileID: 8217972743210025135, guid: 57cbead9cf3fd9643a0a9b181ee03d3b, type: 3}
+      propertyPath: m_Color.r
+      value: 0.4245283
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 57cbead9cf3fd9643a0a9b181ee03d3b, type: 3}
@@ -442,6 +466,10 @@ PrefabInstance:
     - target: {fileID: 9028601709885134014, guid: fa028a8954109494b8f1f792062d94b7, type: 3}
       propertyPath: m_Name
       value: HUD_GameOver
+      objectReference: {fileID: 0}
+    - target: {fileID: 9028601709885134014, guid: fa028a8954109494b8f1f792062d94b7, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fa028a8954109494b8f1f792062d94b7, type: 3}

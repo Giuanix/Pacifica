@@ -17,5 +17,10 @@ public class ScorePingPong : MonoBehaviour
     {
         ScorePartita.text = TotScore.ToString();
         ScoreFinePartita.text = TotScore.ToString();
+
+        if(TotScore >= RecordScore.RecordScorePingPong)
+        {
+            RecordScore.RecordScorePingPong = TotScore;
+        }
     }
 }

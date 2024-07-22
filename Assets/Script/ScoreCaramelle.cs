@@ -19,6 +19,7 @@ public class ScoreCaramelle : MonoBehaviour
         if(TotScore >= RecordScore.RecordScoreCaramelle)
         {
             RecordScore.RecordScoreCaramelle = TotScore;
+            PlayerPrefs.SetFloat("MaxScorecaramelle", TotScore);
         }
     }
 }

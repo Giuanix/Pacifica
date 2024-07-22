@@ -21,6 +21,7 @@ public class ScorePingPong : MonoBehaviour
         if(TotScore >= RecordScore.RecordScorePingPong)
         {
             RecordScore.RecordScorePingPong = TotScore;
+            PlayerPrefs.SetFloat("MaxScorePingPong", TotScore);
         }
     }
 }

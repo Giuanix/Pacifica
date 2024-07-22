@@ -19,6 +19,7 @@ public class ScoreCasse : MonoBehaviour
         if(TotScore >= RecordScore.RecordScoreCasse)
         {
             RecordScore.RecordScoreCasse = TotScore;
+            PlayerPrefs.SetFloat("MaxScoreCasse", TotScore);
         }
     }
 }

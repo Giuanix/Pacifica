@@ -18,19 +18,19 @@ public class RecordScore : MonoBehaviour
             return;
         }
 
-        TXTRecordScoreCaramelle.text = RecordScoreCaramelle.ToString();
-        TXTRecordScorePingPong.text = RecordScorePingPong.ToString();
-        TXTRecordScoreCasse.text = RecordScoreCasse.ToString();
-
-        if(PlayerPrefs.HasKey("GameManagerMenuPrincipale"))
+        if (PlayerPrefs.HasKey("MaxScoreCasse") || PlayerPrefs.HasKey("MaxScoreCaramelle") || PlayerPrefs.HasKey("MaxScorePingPong"))
         {
             LoadScore();
         }
+
+        TXTRecordScoreCaramelle.text = RecordScoreCaramelle.ToString();
+        TXTRecordScorePingPong.text = RecordScorePingPong.ToString();
+        TXTRecordScoreCasse.text = RecordScoreCasse.ToString();
     }
     public void LoadScore()
     {
-        RecordScoreCaramelle = PlayerPrefs.GetFloat("GameManagerMenuPrincipale");
-        RecordScorePingPong = PlayerPrefs.GetFloat("GameManagerMenuPrincipale");
-        RecordScoreCasse = PlayerPrefs.GetFloat("GameManagerMenuPrincipale");
+        RecordScoreCaramelle = PlayerPrefs.GetFloat("MaxScoreCaramelle", 0);
+        RecordScorePingPong = PlayerPrefs.GetFloat("MaxScorePingPong", 0);
+        RecordScoreCasse = PlayerPrefs.GetFloat("MaxScoreCasse", 0);
     }
 }

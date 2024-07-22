@@ -720,7 +720,7 @@ MonoBehaviour:
   MelaGialla: {fileID: 7067988882648056999, guid: ce120360006cf5e42becbc6e28943a6d, type: 3}
   BananaVerde: {fileID: 997458898524287366, guid: 6fa6e39c42d0a464eb1e4440c9ad8fac, type: 3}
   PeraRossa: {fileID: 5131896178168758503, guid: 6c76826dce90adc4581540de87c2d3fd, type: 3}
-  Radius: 2.5
+  Radius: 2.3
   MaxContatoreAumentoDiff: 4
   AttivaProgressioneDiffUno: 1
   AttivaProgressioneDiffDue: 0

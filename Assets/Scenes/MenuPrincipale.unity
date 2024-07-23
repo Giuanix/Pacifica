@@ -1261,6 +1261,7 @@ GameObject:
   - component: {fileID: 313267072}
   - component: {fileID: 313267073}
   - component: {fileID: 313267074}
+  - component: {fileID: 313267075}
   m_Layer: 0
   m_Name: GameManagerMenuPrincipale
   m_TagString: Untagged
@@ -1333,6 +1334,27 @@ MonoBehaviour:
   AudioOffImage: {fileID: 21300000, guid: cc3e2a6c654dc3c4b9fb21f19b4aef69, type: 3}
   button: {fileID: 1674451213}
   Mixer: {fileID: 24100000, guid: c9d4e9f334216fc4293152663835edab, type: 2}
+--- !u!114 &313267075
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 313267070}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d943c1de7f997b4d89f9afe0e850c4e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SpriteMinigiocoCaramelleOn: {fileID: 21300000, guid: 19085eaced8ffab47a8ce4a25c8da844, type: 3}
+  SpriteMinigiocoCaramelleOff: {fileID: 21300000, guid: 762a2e2e14ebe53449d4bade90e3b880, type: 3}
+  SpriteMinigiocoPingPongOn: {fileID: 21300000, guid: 5f90e475dbc57004bbc3bd3b4579497d, type: 3}
+  SpriteMinigiocoPingPongOff: {fileID: 21300000, guid: c6ad8255694bd364f8d0197d39535295, type: 3}
+  PulsanteMinigiocoCaramelle: {fileID: 285052932}
+  PulsanteMinigiocoPingPong: {fileID: 436795080}
+  ValoreAttualeProgressione: 0
+  ValoreSblocco1: 20
+  ValoreSblocco2: 60
 --- !u!1 &314969667
 GameObject:
   m_ObjectHideFlags: 0

@@ -10,23 +10,36 @@ public class GestioneProgressione : MonoBehaviour
     [SerializeField] private Sprite SpriteMinigiocoPingPongOff;
     [SerializeField] private Button PulsanteMinigiocoCaramelle;
     [SerializeField] private Button PulsanteMinigiocoPingPong;
-    [SerializeField] private float ValoreAttualeProgressione;
+
+    [SerializeField] private Slider BarraProgressione;
+    public static float ValoreAttualeProgressione;
+    [SerializeField] private float ValoreSbloccoAttuale;
     [SerializeField] private float ValoreSblocco1;
     [SerializeField] private float ValoreSblocco2;
-    void Start()
+
+    
+    void Awake()
     {
-        if(ValoreAttualeProgressione >=ValoreSblocco1)
+        if (PlayerPrefs.HasKey("Progressi") && PlayerPrefs.GetFloat("Progressi") > 0)
+        {
+            LoadProgress();
+        }
+        if (ValoreAttualeProgressione >= ValoreSblocco1)
         {
             PulsanteMinigiocoCaramelle.image.sprite = SpriteMinigiocoCaramelleOn;
             PulsanteMinigiocoCaramelle.enabled = true;
+            BarraProgressione.minValue = ValoreSblocco1;
+            BarraProgressione.maxValue = ValoreSblocco2;
         }
         else
         {
             PulsanteMinigiocoCaramelle.image.sprite = SpriteMinigiocoCaramelleOff;
             PulsanteMinigiocoCaramelle.enabled = false;
+            BarraProgressione.minValue = 0;
+            BarraProgressione.maxValue = ValoreSblocco1;
         }
 
-        if(ValoreAttualeProgressione >=ValoreSblocco2)
+        if (ValoreAttualeProgressione >= ValoreSblocco2)
         {
             PulsanteMinigiocoPingPong.image.sprite = SpriteMinigiocoPingPongOn;
             PulsanteMinigiocoPingPong.enabled = true;
@@ -36,5 +49,23 @@ public class GestioneProgressione : MonoBehaviour
             PulsanteMinigiocoPingPong.image.sprite = SpriteMinigiocoPingPongOff;
             PulsanteMinigiocoPingPong.enabled = false;
         }
+    }
+    void Start()
+    {
+        if (ValoreAttualeProgressione <= ValoreSblocco1)
+        {
+            ValoreSbloccoAttuale = ValoreSblocco1;
+        }
+        else if (ValoreAttualeProgressione <= ValoreSblocco2 && ValoreAttualeProgressione >= ValoreSblocco1)
+        {
+            ValoreSbloccoAttuale = ValoreSblocco2;
+        }
+        BarraProgressione.value = ValoreAttualeProgressione;
+        PlayerPrefs.SetFloat("Progressi", ValoreAttualeProgressione);
+    }
+
+    public void LoadProgress()
+    {
+        ValoreAttualeProgressione = PlayerPrefs.GetFloat("Progressi", 0);
     }
 }

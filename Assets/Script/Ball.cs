@@ -49,6 +49,7 @@ public class Ball : MonoBehaviour
         if(col.gameObject.tag == "Player")
         {
             Manager.TotScore = Manager.TotScore + 1;
+            GestioneProgressione.ValoreAttualeProgressione = GestioneProgressione.ValoreAttualeProgressione + 1;
         }
         if (col.gameObject.tag == "Player" && AumentoSpeed == true)
         {

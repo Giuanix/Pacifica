@@ -543,17 +543,57 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 254475184841936333, guid: 27a5dae44e417a148b3dc71ddf98f15a, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 24fe2bb6f1cf262489aa589653a1526e, type: 3}
+    - target: {fileID: 828456364005811514, guid: 27a5dae44e417a148b3dc71ddf98f15a, type: 3}
+      propertyPath: m_SortingOrder
+      value: -10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1004699652463539809, guid: 27a5dae44e417a148b3dc71ddf98f15a, type: 3}
+      propertyPath: m_SortingOrder
+      value: -10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1467725852970179147, guid: 27a5dae44e417a148b3dc71ddf98f15a, type: 3}
+      propertyPath: m_SortingOrder
+      value: -10
+      objectReference: {fileID: 0}
+    - target: {fileID: 3155752526534914622, guid: 27a5dae44e417a148b3dc71ddf98f15a, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.46967
+      objectReference: {fileID: 0}
+    - target: {fileID: 3155752526534914622, guid: 27a5dae44e417a148b3dc71ddf98f15a, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.4755409
+      objectReference: {fileID: 0}
+    - target: {fileID: 3155752526534914622, guid: 27a5dae44e417a148b3dc71ddf98f15a, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.46967
+      objectReference: {fileID: 0}
+    - target: {fileID: 3155752526534914622, guid: 27a5dae44e417a148b3dc71ddf98f15a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 3.44
+      objectReference: {fileID: 0}
     - target: {fileID: 4398139621619424952, guid: 27a5dae44e417a148b3dc71ddf98f15a, type: 3}
       propertyPath: m_Name
       value: ScoreInGame
       objectReference: {fileID: 0}
-    - target: {fileID: 4942744589121035131, guid: 27a5dae44e417a148b3dc71ddf98f15a, type: 3}
+    - target: {fileID: 4672682499657692299, guid: 27a5dae44e417a148b3dc71ddf98f15a, type: 3}
       propertyPath: m_LocalScale.x
-      value: 5.4375
+      value: 14.4288
       objectReference: {fileID: 0}
-    - target: {fileID: 4942744589121035131, guid: 27a5dae44e417a148b3dc71ddf98f15a, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 4.53
+    - target: {fileID: 4672682499657692299, guid: 27a5dae44e417a148b3dc71ddf98f15a, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 14.4288
+      objectReference: {fileID: 0}
+    - target: {fileID: 4672682499657692299, guid: 27a5dae44e417a148b3dc71ddf98f15a, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 14.4288
+      objectReference: {fileID: 0}
+    - target: {fileID: 4672682499657692299, guid: 27a5dae44e417a148b3dc71ddf98f15a, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -1089
       objectReference: {fileID: 0}
     - target: {fileID: 4942744590306415350, guid: 27a5dae44e417a148b3dc71ddf98f15a, type: 3}
       propertyPath: m_RootOrder
@@ -623,6 +663,26 @@ PrefabInstance:
       propertyPath: MinigiocoPingPong
       value: 
       objectReference: {fileID: 972011176}
+    - target: {fileID: 4942744590667400933, guid: 27a5dae44e417a148b3dc71ddf98f15a, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4942744590667400933, guid: 27a5dae44e417a148b3dc71ddf98f15a, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4942744590667400933, guid: 27a5dae44e417a148b3dc71ddf98f15a, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7165580361986618359, guid: 27a5dae44e417a148b3dc71ddf98f15a, type: 3}
+      propertyPath: m_SortingOrder
+      value: -10
+      objectReference: {fileID: 0}
+    - target: {fileID: 8621534640099723812, guid: 27a5dae44e417a148b3dc71ddf98f15a, type: 3}
+      propertyPath: m_SortingOrder
+      value: -10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 27a5dae44e417a148b3dc71ddf98f15a, type: 3}
 --- !u!1001 &9028601708744634970

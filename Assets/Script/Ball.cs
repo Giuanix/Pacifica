@@ -53,7 +53,7 @@ public class Ball : MonoBehaviour
         }
         if (col.gameObject.tag == "Player" && AumentoSpeed == true)
         {
-            Speed = Speed + 0.5f;
+            Speed = Speed + 0.25f;
             rb.velocity = new Vector2(Speed + x, Speed + y);
         }
         if (col.gameObject.tag == "Player" && DiminuisciPlayer == true)

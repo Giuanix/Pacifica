@@ -48,7 +48,7 @@ public class SpawnerFrutta : MonoBehaviour
             AttivaProgressioneDiffDue = true;
         }
 
-        if(ManagerTimer.MaxTimerMinigiocoCassa == 20)
+        if(ManagerTimer.MaxTimerMinigiocoCassa == 10)
         {
             AttivaProgressioneDiffUno = false;
             AttivaProgressioneDiffDue = false;

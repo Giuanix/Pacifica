@@ -517,7 +517,7 @@ MonoBehaviour:
   GameOver: {fileID: 1201074577}
   MinigiocoCasse: {fileID: 5413033991921210332}
   TimerMinigiocoCassa: 0
-  MaxTimerMinigiocoCassa: 25
+  MaxTimerMinigiocoCassa: 15
 --- !u!114 &1939511782
 MonoBehaviour:
   m_ObjectHideFlags: 0

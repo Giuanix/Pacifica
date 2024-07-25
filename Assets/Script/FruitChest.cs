@@ -15,7 +15,6 @@ public class FruitChest : MonoBehaviour
         if(col.gameObject.tag == "Frutto")
         {
             Manager.NumeroFrutti = Manager.NumeroFrutti + 1;
-            GestioneProgressione.ValoreAttualeProgressione = GestioneProgressione.ValoreAttualeProgressione + 1;
         }
     }
 }

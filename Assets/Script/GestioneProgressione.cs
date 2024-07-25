@@ -13,13 +13,15 @@ public class GestioneProgressione : MonoBehaviour
 
     [SerializeField] private Slider BarraProgressione;
     public static float ValoreAttualeProgressione;
-    [SerializeField] private float ValoreSbloccoAttuale;
+    public float ValoreSbloccoAttuale;
     [SerializeField] private float ValoreSblocco1;
     [SerializeField] private float ValoreSblocco2;
 
     
     void Awake()
     {
+        PlayerPrefs.SetFloat("Progressi", ValoreAttualeProgressione);
+        
         if (PlayerPrefs.HasKey("Progressi") && PlayerPrefs.GetFloat("Progressi") > 0)
         {
             LoadProgress();
@@ -60,8 +62,7 @@ public class GestioneProgressione : MonoBehaviour
         {
             ValoreSbloccoAttuale = ValoreSblocco2;
         }
-        BarraProgressione.value = ValoreAttualeProgressione;
-        PlayerPrefs.SetFloat("Progressi", ValoreAttualeProgressione);
+        BarraProgressione.value = ValoreAttualeProgressione;  
     }
 
     public void LoadProgress()

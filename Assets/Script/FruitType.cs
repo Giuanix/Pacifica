@@ -19,6 +19,7 @@ public class FruitType : MonoBehaviour
             if(col.gameObject.GetComponent<FruitChest>().Chest1==Frutta || col.gameObject.GetComponent<FruitChest>().Chest2==Frutta)
             {
                 ManagerScore.TotScore = ManagerScore.TotScore + 1;
+                GestioneProgressione.ValoreAttualeProgressione = GestioneProgressione.ValoreAttualeProgressione + 1;
                 Destroy(gameObject);
             }
             else

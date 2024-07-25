@@ -487,6 +487,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Puntatore
       objectReference: {fileID: 0}
+    - target: {fileID: 8557041104830928827, guid: 928b8b83f2eed2843a5cd74ca86a2960, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8557041104830928829, guid: 928b8b83f2eed2843a5cd74ca86a2960, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -750,8 +754,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f70dbfa8933b1fb44a4f21f9e80b7019, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SpeedObjectModificato: -1.4
-  MaxTimer: 12
+  SpeedObjectModificato: -1.6
+  MaxTimer: 10
 --- !u!114 &2015523681
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -37,7 +37,7 @@ public class PgcaramelleMovement : MonoBehaviour
             SwitchTimer = SwitchTimer - Time.deltaTime;
             if(SwitchTimer <= 0)
             {
-                transform.localScale = new Vector3(1f, 1f, 0);
+                transform.localScale = new Vector3(0.1f, 0.1f, 0);
                 SwitchScale = false;
             }
         }

@@ -20,6 +20,7 @@ public class FruitType : MonoBehaviour
             {
                 ManagerScore.TotScore = ManagerScore.TotScore + 1;
                 GestioneProgressione.ValoreAttualeProgressione = GestioneProgressione.ValoreAttualeProgressione + 1;
+                PlayerPrefs.SetFloat("Progressi", GestioneProgressione.ValoreAttualeProgressione);
                 Destroy(gameObject);
             }
             else

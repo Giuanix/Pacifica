@@ -60,6 +60,7 @@ public class PgcaramelleMovement : MonoBehaviour
         {
             Manager.TotScore = Manager.TotScore + 1;
             GestioneProgressione.ValoreAttualeProgressione = GestioneProgressione.ValoreAttualeProgressione + 1;
+            PlayerPrefs.SetFloat("Progressi", GestioneProgressione.ValoreAttualeProgressione);
         }
         else if(col.gameObject.tag == "Peperoncino")
         {

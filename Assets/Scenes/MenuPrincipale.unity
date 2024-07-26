@@ -1354,8 +1354,8 @@ MonoBehaviour:
   PulsanteMinigiocoPingPong: {fileID: 436795080}
   BarraProgressione: {fileID: 1235423407}
   ValoreSbloccoAttuale: 0
-  ValoreSblocco1: 200
-  ValoreSblocco2: 500
+  ValoreSblocco1: 50
+  ValoreSblocco2: 100
 --- !u!1 &314969667
 GameObject:
   m_ObjectHideFlags: 0

@@ -20,8 +20,6 @@ public class GestioneProgressione : MonoBehaviour
     
     void Awake()
     {
-        PlayerPrefs.SetFloat("Progressi", ValoreAttualeProgressione);
-        
         if (PlayerPrefs.HasKey("Progressi") && PlayerPrefs.GetFloat("Progressi") > 0)
         {
             LoadProgress();

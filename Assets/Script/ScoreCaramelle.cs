@@ -6,7 +6,7 @@ public class ScoreCaramelle : MonoBehaviour
 {
     public float TotScore; //variabile che contiene lo score totalizzato
     public TMP_Text ScorePartita; //variabile di tipo testo
-    public TMP_Text ScoreFinePartita;
+    public TMP_Text ScoreFinePartita; //variabile che contiene lo score totalizzato a fine partita
     void Start()
     {
         TotScore = 0;
@@ -16,10 +16,11 @@ public class ScoreCaramelle : MonoBehaviour
         ScorePartita.text = TotScore.ToString();
         ScoreFinePartita.text = TotScore.ToString();
 
+        //Funzione per il salvataggio del nuovo record
         if(TotScore >= RecordScore.RecordScoreCaramelle)
         {
             RecordScore.RecordScoreCaramelle = TotScore;
-            PlayerPrefs.SetFloat("MaxScorecaramelle", TotScore);
+            PlayerPrefs.SetFloat("MaxScoreCaramelle", TotScore);
         }
     }
 }

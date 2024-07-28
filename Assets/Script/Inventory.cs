@@ -11,6 +11,7 @@ public class Inventory : MonoBehaviour
     public SpawnerFrutta ManagerSpawner;
     public TimerMinigiocoCasse ManagerTimer;
     public int ContatoreAumentoDiff;
+    [SerializeField] private AudioSource AudioPassaggioLivello;
     void Start()
     {
         NumeroFrutti = 0;
@@ -18,6 +19,11 @@ public class Inventory : MonoBehaviour
     }
     void Update()
     {
+        if(NumeroFrutti == TotNumeroFrutti)
+        {
+            AudioPassaggioLivello.Play();
+        }
+        
         if (NumeroFrutti == TotNumeroFrutti && ManagerSpawner.AttivaProgressioneDiffUno == true)
         {
             FunzioneProgressioneDiffUno();

@@ -1269,6 +1269,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 137969994532552035, guid: 2023efc06994b55438647b4bd4c5299e, type: 3}
   m_PrefabInstance: {fileID: 8490139195488950}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2658316015107536954 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2664466216925545100, guid: 2023efc06994b55438647b4bd4c5299e, type: 3}
+  m_PrefabInstance: {fileID: 8490139195488950}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2639328110449319798
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1352,6 +1357,18 @@ PrefabInstance:
       propertyPath: m_Color.r
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6933554318133827987, guid: 4df608e5865073c41a5af7b4c8e7e4d1, type: 3}
+      propertyPath: m_SortingOrder
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 6933554318133827990, guid: 4df608e5865073c41a5af7b4c8e7e4d1, type: 3}
+      propertyPath: Pg
+      value: 
+      objectReference: {fileID: 2658316015107536954}
+    - target: {fileID: 6933554318133827990, guid: 4df608e5865073c41a5af7b4c8e7e4d1, type: 3}
+      propertyPath: MinigiocoPingPong
+      value: 
+      objectReference: {fileID: 4942744590306415351}
     - target: {fileID: 6933554318133827991, guid: 4df608e5865073c41a5af7b4c8e7e4d1, type: 3}
       propertyPath: m_Name
       value: Ball

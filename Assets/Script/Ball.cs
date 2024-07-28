@@ -16,7 +16,9 @@ public class Ball : MonoBehaviour
     private float y;
     [SerializeField] private float DimensioneX = 1.5f;
     public ScorePingPong Manager;
-    // Start is called before the first frame update
+    [SerializeField] private AudioSource AudioGameOver;
+    [SerializeField] private AudioSource AudioLivello;
+    [SerializeField] private AudioSource AudioPalla;
     void Start()
     {
         Time.timeScale = 1f;
@@ -46,6 +48,8 @@ public class Ball : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D col)
     {
+        AudioPalla.Play();
+        
         if(col.gameObject.tag == "Player")
         {
             Manager.TotScore = Manager.TotScore + 1;
@@ -65,6 +69,8 @@ public class Ball : MonoBehaviour
         }
         if (col.gameObject.tag == "DestroyBox")
         {
+            AudioLivello.Stop();
+            AudioGameOver.Play();
             Time.timeScale = 0f;
             MinigiocoPingPong.SetActive(false);
             GameOver.SetActive(true);

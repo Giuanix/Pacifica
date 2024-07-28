@@ -10,7 +10,7 @@ public class FruitType : MonoBehaviour
     void Start()
     {
         Manager = GameObject.Find("GameManagerMinigiocoCasse").GetComponent<ControlloGameOver>();
-        ManagerScore = GameObject.Find("GameManagerMinigiocoCasse").GetComponent<ScoreCasse>();
+        ManagerScore = GameObject.Find("GameManagerMinigiocoCasse").GetComponent<ScoreCasse>(); 
     }
     private void OnTriggerEnter2D(Collider2D col)
     {

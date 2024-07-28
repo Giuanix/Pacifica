@@ -14,6 +14,10 @@ public class PgcaramelleMovement : MonoBehaviour
     public float MaxSwitchTimer;
     private float SwitchTimer;
     public ScoreCaramelle Manager;
+    [SerializeField] private AudioSource AudioGameOver;
+    [SerializeField] private AudioSource AudioLivello;
+    [SerializeField] private AudioSource AudioMorso;
+    [SerializeField] private AudioSource AudioPowerUp;
     void Start()
     {
         Time.timeScale = 1f;
@@ -58,12 +62,15 @@ public class PgcaramelleMovement : MonoBehaviour
     {
         if(col.gameObject.tag == "Caramella")
         {
+            AudioMorso.Play();
             Manager.TotScore = Manager.TotScore + 1;
             GestioneProgressione.ValoreAttualeProgressione = GestioneProgressione.ValoreAttualeProgressione + 1;
             PlayerPrefs.SetFloat("Progressi", GestioneProgressione.ValoreAttualeProgressione);
         }
         else if(col.gameObject.tag == "Peperoncino")
         {
+            AudioLivello.Stop();
+            AudioGameOver.Play();
             Time.timeScale = 0f;
             MinigiocoCaramelle.SetActive(false);
             SpawnCaramelle.SetActive(false);
@@ -71,6 +78,7 @@ public class PgcaramelleMovement : MonoBehaviour
         }
         else if(col.gameObject.tag == "PowerUp")
         {
+            AudioPowerUp.Play();
             transform.localScale = new Vector3(0.125f, 0.125f, 0);
             SwitchTimer = MaxSwitchTimer;
             SwitchScale = true;

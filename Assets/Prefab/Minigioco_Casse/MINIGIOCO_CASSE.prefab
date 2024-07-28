@@ -1089,7 +1089,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9146309921784911534, guid: 8e17e4ab3ff99534a8a6a81f21211b5d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.6
+      value: 1.55
       objectReference: {fileID: 0}
     - target: {fileID: 9146309921784911534, guid: 8e17e4ab3ff99534a8a6a81f21211b5d, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1127,6 +1127,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9146309921784911535, guid: 8e17e4ab3ff99534a8a6a81f21211b5d, type: 3}
+      propertyPath: m_Size.x
+      value: 3.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 9146309921784911535, guid: 8e17e4ab3ff99534a8a6a81f21211b5d, type: 3}
+      propertyPath: m_Size.y
+      value: 3.6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8e17e4ab3ff99534a8a6a81f21211b5d, type: 3}
 --- !u!4 &8288816330344110540 stripped
@@ -1151,7 +1159,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4794819435257352432, guid: 5e203efe8ebb9d04a803052bbe3b3d3a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.6
+      value: -1.55
       objectReference: {fileID: 0}
     - target: {fileID: 4794819435257352432, guid: 5e203efe8ebb9d04a803052bbe3b3d3a, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1210,6 +1218,14 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 0}
     - target: {fileID: 4794819435257352435, guid: 5e203efe8ebb9d04a803052bbe3b3d3a, type: 3}
+      propertyPath: m_Size.x
+      value: 3.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4794819435257352435, guid: 5e203efe8ebb9d04a803052bbe3b3d3a, type: 3}
+      propertyPath: m_Size.y
+      value: 3.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4794819435257352435, guid: 5e203efe8ebb9d04a803052bbe3b3d3a, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.x
       value: 8.76
       objectReference: {fileID: 0}
@@ -1246,6 +1262,14 @@ PrefabInstance:
     - target: {fileID: 1622268146505270400, guid: 0c27afb533d152840b5e0fb6298cfc3e, type: 3}
       propertyPath: Manager
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1622268146505270402, guid: 0c27afb533d152840b5e0fb6298cfc3e, type: 3}
+      propertyPath: m_Size.x
+      value: 3.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1622268146505270402, guid: 0c27afb533d152840b5e0fb6298cfc3e, type: 3}
+      propertyPath: m_Size.y
+      value: 3.6
       objectReference: {fileID: 0}
     - target: {fileID: 1622268146505270404, guid: 0c27afb533d152840b5e0fb6298cfc3e, type: 3}
       propertyPath: m_Sprite

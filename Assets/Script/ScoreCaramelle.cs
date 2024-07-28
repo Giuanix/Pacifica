@@ -7,8 +7,12 @@ public class ScoreCaramelle : MonoBehaviour
     public float TotScore; //variabile che contiene lo score totalizzato
     public TMP_Text ScorePartita; //variabile di tipo testo
     public TMP_Text ScoreFinePartita; //variabile che contiene lo score totalizzato a fine partita
+    [SerializeField] private GameObject TestoRecordScore;
+    [SerializeField] private GameObject TestoScore;
     void Start()
     {
+        TestoScore.SetActive(true);
+        TestoRecordScore.SetActive(false);
         TotScore = 0;
     }
     void Update() //metodo per implementare lo score e stamparlo nella GUI di gioco
@@ -19,6 +23,8 @@ public class ScoreCaramelle : MonoBehaviour
         //Funzione per il salvataggio del nuovo record
         if(TotScore >= RecordScore.RecordScoreCaramelle)
         {
+            TestoScore.SetActive(false);
+            TestoRecordScore.SetActive(true);
             RecordScore.RecordScoreCaramelle = TotScore;
             PlayerPrefs.SetFloat("MaxScoreCaramelle", TotScore);
         }

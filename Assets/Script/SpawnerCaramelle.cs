@@ -15,7 +15,6 @@ public class SpawnerCaramelle : MonoBehaviour
     [SerializeField] private float MaxCadenzaTimer;
     private float CadenzaTimer;
     [SerializeField] private float LimiteSpawnSuAsseY;
-    [SerializeField] private int LimiteSpawnObject;
     [SerializeField] private float CadutaPowerUp;
     public SlotSalvataggioSpeedObject Manager;
 
@@ -45,14 +44,16 @@ public class SpawnerCaramelle : MonoBehaviour
         if(Manager.SpeedObjectModificato == CadutaPowerUp)
         {
             SpawnPowerUp();
-            LimiteSpawnObject = LimiteSpawnObject + 1;
-            LimiteSpawnSuAsseY = LimiteSpawnSuAsseY + 3f;
             CadutaPowerUp = CadutaPowerUp + (-2.0f);
+            if(LimiteSpawnSuAsseY != 8f)
+            {
+                LimiteSpawnSuAsseY = LimiteSpawnSuAsseY - 2f;
+            }
         }
     }
     void SpawnObjectRandom()
     {
-        for (int i = 0; i < LimiteSpawnObject; i++)
+        for (int i = 0; i < 1; i++)
         {
             RandomNum = Random.Range(1, 3);
             Vector3 randomPos = new Vector3(Random.Range(-2.2f, 2.2f),Random.Range(8f, LimiteSpawnSuAsseY), 0);

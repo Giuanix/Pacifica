@@ -10,6 +10,8 @@ public class TimerMinigiocoCasse : MonoBehaviour
     [SerializeField] private GameObject MinigiocoCasse;
     public float TimerMinigiocoCassa;
     public float MaxTimerMinigiocoCassa;
+    [SerializeField] private AudioSource AudioGameOver;
+    [SerializeField] private AudioSource AudioLivello;
     void Start()
     {
         Time.timeScale = 1f;
@@ -24,7 +26,10 @@ public class TimerMinigiocoCasse : MonoBehaviour
 
         if(TimerMinigiocoCassa <= 0f)
         {
+            TimerMinigiocoCassa = MaxTimerMinigiocoCassa;
             Time.timeScale = 0f;
+            AudioLivello.Stop();
+            AudioGameOver.Play();
             GameOver.SetActive(true);
             MinigiocoCasse.SetActive(false);
         }

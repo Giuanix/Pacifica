@@ -187,6 +187,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2236361454476611776, guid: fa028a8954109494b8f1f792062d94b7, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2256826583668696205, guid: fa028a8954109494b8f1f792062d94b7, type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4278255581
+      objectReference: {fileID: 0}
+    - target: {fileID: 7880451953758432546, guid: fa028a8954109494b8f1f792062d94b7, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 9028601709733290347, guid: fa028a8954109494b8f1f792062d94b7, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 

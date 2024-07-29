@@ -79,7 +79,7 @@ public class PgcaramelleMovement : MonoBehaviour
         else if(col.gameObject.tag == "PowerUp")
         {
             AudioPowerUp.Play();
-            transform.localScale = new Vector3(0.125f, 0.125f, 0);
+            transform.localScale = new Vector3(0.11f, 0.11f, 0);
             SwitchTimer = MaxSwitchTimer;
             SwitchScale = true;
         }

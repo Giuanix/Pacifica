@@ -153,5 +153,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b3ca3dedac90276408e8fb5d4fc58e04, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  GameOver: {fileID: 0}
+  MinigiocoPingPong: {fileID: 0}
   Speed: 2
   rb: {fileID: 6933554318133827985}
+  Pg: {fileID: 0}
+  ContatoreDiminuisciPlayer: 0
+  DimensioneX: 1.5
+  Manager: {fileID: 0}
+  AudioGameOver: {fileID: 0}
+  AudioLivello: {fileID: 0}
+  AudioPalla: {fileID: 0}

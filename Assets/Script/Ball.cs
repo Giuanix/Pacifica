@@ -28,7 +28,7 @@ public class Ball : MonoBehaviour
     }
     private void Update()
     {
-        if(Speed == 12f)
+        if(Speed == 13f)
         {
             AumentoSpeed = false;
             DiminuisciPlayer = true;
@@ -58,13 +58,13 @@ public class Ball : MonoBehaviour
         }
         if (col.gameObject.tag == "Player" && AumentoSpeed == true)
         {
-            Speed = Speed + 0.25f;
+            Speed = Speed + 0.5f;
             rb.velocity = new Vector2(Speed + x, Speed + y);
         }
         if (col.gameObject.tag == "Player" && DiminuisciPlayer == true)
         {
             DimensioneX = DimensioneX - 0.1f;
-            Pg.transform.localScale = new Vector3(DimensioneX, 0.3f, 0);
+            Pg.transform.localScale = new Vector3(DimensioneX, 0.4f, 0);
             ContatoreDiminuisciPlayer = ContatoreDiminuisciPlayer + 1;
         }
         if (col.gameObject.tag == "DestroyBox")

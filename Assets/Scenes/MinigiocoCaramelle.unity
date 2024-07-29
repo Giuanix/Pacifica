@@ -1186,10 +1186,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7701260130962465329, guid: 75225d5ec1334904caad7ed83a33058d, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -4
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 75225d5ec1334904caad7ed83a33058d, type: 3}
 --- !u!1 &1829323829 stripped
@@ -1246,6 +1242,7 @@ MonoBehaviour:
   MinCadenzaTimer: 1
   MaxCadenzaTimer: 15
   LimiteSpawnSuAsseY: 16
+  LimiteSpawnOnject: 1
   CadutaPowerUp: -2.4
   Manager: {fileID: 2015523680}
 --- !u!4 &1839734153
@@ -1405,6 +1402,7 @@ GameObject:
   - component: {fileID: 2015523682}
   - component: {fileID: 2015523683}
   - component: {fileID: 2015523684}
+  - component: {fileID: 2015523685}
   m_Layer: 0
   m_Name: GameManagerMinigiocoCaramelle
   m_TagString: Untagged
@@ -1439,7 +1437,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f70dbfa8933b1fb44a4f21f9e80b7019, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SpeedObjectModificato: -1.6
+  SpeedObjectModificato: -2
   MaxTimer: 10
 --- !u!114 &2015523681
 MonoBehaviour:
@@ -1500,6 +1498,18 @@ MonoBehaviour:
   TXTRecordScoreCaramelle: {fileID: 0}
   TXTRecordScorePingPong: {fileID: 0}
   TXTRecordScoreCasse: {fileID: 0}
+--- !u!114 &2015523685
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2015523677}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68906c98d684c4d4dba23c73114f906a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2029095632
 GameObject:
   m_ObjectHideFlags: 0

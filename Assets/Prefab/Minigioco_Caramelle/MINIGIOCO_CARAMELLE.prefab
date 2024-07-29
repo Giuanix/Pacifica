@@ -74,6 +74,8 @@ MonoBehaviour:
   MinigiocoCaramelle: {fileID: 7701260130419095902}
   SpawnCaramelle: {fileID: 0}
   GameOver: {fileID: 0}
+  AudioGameOver: {fileID: 0}
+  AudioLivello: {fileID: 0}
 --- !u!1 &3169279983979032217
 GameObject:
   m_ObjectHideFlags: 0
@@ -449,12 +451,20 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5428531702882131398, guid: 21d3c73c0f19e3643b704459162c5cd0, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.08
+      objectReference: {fileID: 0}
+    - target: {fileID: 5428531702882131398, guid: 21d3c73c0f19e3643b704459162c5cd0, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.08
+      objectReference: {fileID: 0}
+    - target: {fileID: 5428531702882131398, guid: 21d3c73c0f19e3643b704459162c5cd0, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.084542215
       objectReference: {fileID: 0}
     - target: {fileID: 5428531702882131398, guid: 21d3c73c0f19e3643b704459162c5cd0, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.996612
+      value: -4
       objectReference: {fileID: 0}
     - target: {fileID: 5428531702882131398, guid: 21d3c73c0f19e3643b704459162c5cd0, type: 3}
       propertyPath: m_LocalPosition.z

@@ -1031,6 +1031,7 @@ GameObject:
   - component: {fileID: 1939511784}
   - component: {fileID: 1939511785}
   - component: {fileID: 1939511786}
+  - component: {fileID: 1939511787}
   m_Layer: 0
   m_Name: GameManagerMinigiocoCasse
   m_TagString: Untagged
@@ -1176,6 +1177,18 @@ MonoBehaviour:
   TXTRecordScoreCaramelle: {fileID: 0}
   TXTRecordScorePingPong: {fileID: 0}
   TXTRecordScoreCasse: {fileID: 0}
+--- !u!114 &1939511787
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1939511778}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68906c98d684c4d4dba23c73114f906a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &1958718988 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 942518049644531751, guid: fa028a8954109494b8f1f792062d94b7, type: 3}

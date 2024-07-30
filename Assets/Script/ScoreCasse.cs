@@ -8,10 +8,8 @@ public class ScoreCasse : MonoBehaviour
     public TMP_Text ScorePartita; //variabile di tipo testo
     public TMP_Text ScoreFinePartita;
     [SerializeField] private GameObject TestoRecordScore;
-    [SerializeField] private GameObject TestoScore;
     void Start()
     {
-        TestoScore.SetActive(true);
         TestoRecordScore.SetActive(false);
         TotScore = 0;
     }
@@ -22,7 +20,6 @@ public class ScoreCasse : MonoBehaviour
 
         if(TotScore >= RecordScore.RecordScoreCasse)
         {
-            TestoScore.SetActive(false);
             TestoRecordScore.SetActive(true);
             RecordScore.RecordScoreCasse = TotScore;
             PlayerPrefs.SetFloat("MaxScoreCasse", TotScore);

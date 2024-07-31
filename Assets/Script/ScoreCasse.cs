@@ -7,6 +7,7 @@ public class ScoreCasse : MonoBehaviour
     public int TotScore; //variabile che contiene lo score totalizzato
     public TMP_Text ScorePartita; //variabile di tipo testo
     public TMP_Text ScoreFinePartita;
+    public TMP_Text ScoreInPausa; 
     [SerializeField] private GameObject TestoRecordScore;
     void Start()
     {
@@ -17,6 +18,7 @@ public class ScoreCasse : MonoBehaviour
     {
         ScorePartita.text = TotScore.ToString();
         ScoreFinePartita.text = TotScore.ToString();
+        ScoreInPausa.text = TotScore.ToString();
 
         if(TotScore >= RecordScore.RecordScoreCasse)
         {

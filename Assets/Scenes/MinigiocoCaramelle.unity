@@ -1203,9 +1203,13 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 525472467972317083, guid: 75225d5ec1334904caad7ed83a33058d, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 2583e3d815083524497ac994c23c1885, type: 3}
+      propertyPath: m_Size.x
+      value: 12.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 525472467972317083, guid: 75225d5ec1334904caad7ed83a33058d, type: 3}
+      propertyPath: m_Size.y
+      value: 12.8
+      objectReference: {fileID: 0}
     - target: {fileID: 687047529250914053, guid: 75225d5ec1334904caad7ed83a33058d, type: 3}
       propertyPath: m_LocalPosition.y
       value: -4.79
@@ -1274,26 +1278,6 @@ PrefabInstance:
       propertyPath: SpawnCaramelle
       value: 
       objectReference: {fileID: 1839734151}
-    - target: {fileID: 6643758058427116525, guid: 75225d5ec1334904caad7ed83a33058d, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1.681069
-      objectReference: {fileID: 0}
-    - target: {fileID: 6643758058427116525, guid: 75225d5ec1334904caad7ed83a33058d, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1.681069
-      objectReference: {fileID: 0}
-    - target: {fileID: 6643758058427116525, guid: 75225d5ec1334904caad7ed83a33058d, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 1.681069
-      objectReference: {fileID: 0}
-    - target: {fileID: 6643758058427116525, guid: 75225d5ec1334904caad7ed83a33058d, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6643758058427116525, guid: 75225d5ec1334904caad7ed83a33058d, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 7701260130419095902, guid: 75225d5ec1334904caad7ed83a33058d, type: 3}
       propertyPath: m_Name
       value: MINIGIOCO_CARAMELLE

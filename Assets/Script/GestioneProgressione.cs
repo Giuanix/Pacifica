@@ -10,7 +10,10 @@ public class GestioneProgressione : MonoBehaviour
     [SerializeField] private Sprite SpriteMinigiocoPingPongOff;
     [SerializeField] private Button PulsanteMinigiocoCaramelle;
     [SerializeField] private Button PulsanteMinigiocoPingPong;
-
+    [SerializeField] private GameObject SchermataSblocco1;
+    [SerializeField] private GameObject SchermataSblocco2;
+    [SerializeField] private bool AttivaSchermata1 = false;
+    [SerializeField] private bool AttivaSchermata2 = false;
     [SerializeField] private Slider BarraProgressione;
     public static float ValoreAttualeProgressione;
     public float ValoreSbloccoAttuale;
@@ -20,6 +23,9 @@ public class GestioneProgressione : MonoBehaviour
     
     void Awake()
     {
+        SchermataSblocco1.SetActive(false);
+        SchermataSblocco2.SetActive(false);
+
         if (PlayerPrefs.HasKey("Progressi") && PlayerPrefs.GetFloat("Progressi") > 0)
         {
             LoadProgress();
@@ -43,6 +49,12 @@ public class GestioneProgressione : MonoBehaviour
         {
             PulsanteMinigiocoPingPong.image.sprite = SpriteMinigiocoPingPongOn;
             PulsanteMinigiocoPingPong.enabled = true;
+
+            if (AttivaSchermata2 == false)
+            {
+                SchermataSblocco2.SetActive(true);
+                AttivaSchermata2 = true;
+            }
         }
         else
         {
@@ -63,8 +75,35 @@ public class GestioneProgressione : MonoBehaviour
         BarraProgressione.value = ValoreAttualeProgressione;  
     }
 
+    private void Update()
+    {
+        if (ValoreAttualeProgressione >= ValoreSblocco1 && AttivaSchermata1 == false)
+        {
+            SchermataSblocco1.SetActive(true);
+            AttivaSchermata1 = true;
+            PlayerPrefs.SetInt("AttivaSchermata1", 1);
+        }
+
+        if (ValoreAttualeProgressione >= ValoreSblocco2)
+        { 
+            if (AttivaSchermata2 == false)
+            {
+                SchermataSblocco2.SetActive(true);
+                AttivaSchermata2 = true;
+                PlayerPrefs.SetInt("AttivaSchermata2", 1);
+            }
+        }
+    }
     public void LoadProgress()
     {
         ValoreAttualeProgressione = PlayerPrefs.GetFloat("Progressi", 0);
+        if(PlayerPrefs.GetInt("AttivaSchermata1") == 1)
+        {
+            AttivaSchermata1 = true;
+        }
+        if (PlayerPrefs.GetInt("AttivaSchermata2") == 1)
+        {
+            AttivaSchermata2 = true;
+        }
     }
 }

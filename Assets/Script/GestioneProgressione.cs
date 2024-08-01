@@ -49,12 +49,6 @@ public class GestioneProgressione : MonoBehaviour
         {
             PulsanteMinigiocoPingPong.image.sprite = SpriteMinigiocoPingPongOn;
             PulsanteMinigiocoPingPong.enabled = true;
-
-            if (AttivaSchermata2 == false)
-            {
-                SchermataSblocco2.SetActive(true);
-                AttivaSchermata2 = true;
-            }
         }
         else
         {
@@ -84,19 +78,17 @@ public class GestioneProgressione : MonoBehaviour
             PlayerPrefs.SetInt("AttivaSchermata1", 1);
         }
 
-        if (ValoreAttualeProgressione >= ValoreSblocco2)
+        if (ValoreAttualeProgressione >= ValoreSblocco2 && AttivaSchermata2 == false)
         { 
-            if (AttivaSchermata2 == false)
-            {
-                SchermataSblocco2.SetActive(true);
-                AttivaSchermata2 = true;
-                PlayerPrefs.SetInt("AttivaSchermata2", 1);
-            }
+            SchermataSblocco2.SetActive(true);
+            AttivaSchermata2 = true;
+            PlayerPrefs.SetInt("AttivaSchermata2", 1);
         }
     }
     public void LoadProgress()
     {
         ValoreAttualeProgressione = PlayerPrefs.GetFloat("Progressi", 0);
+
         if(PlayerPrefs.GetInt("AttivaSchermata1") == 1)
         {
             AttivaSchermata1 = true;

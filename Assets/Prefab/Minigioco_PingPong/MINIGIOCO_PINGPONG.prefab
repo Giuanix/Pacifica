@@ -1712,6 +1712,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2658316015107536954}
     - target: {fileID: 6933554318133827990, guid: 4df608e5865073c41a5af7b4c8e7e4d1, type: 3}
+      propertyPath: Speed
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6933554318133827990, guid: 4df608e5865073c41a5af7b4c8e7e4d1, type: 3}
       propertyPath: MinigiocoPingPong
       value: 
       objectReference: {fileID: 4942744590306415351}

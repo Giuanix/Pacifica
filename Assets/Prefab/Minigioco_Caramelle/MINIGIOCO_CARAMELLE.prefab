@@ -577,6 +577,14 @@ PrefabInstance:
       value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1385869256895879181, guid: 21d3c73c0f19e3643b704459162c5cd0, type: 3}
+      propertyPath: IncrementoScore
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1385869256895879181, guid: 21d3c73c0f19e3643b704459162c5cd0, type: 3}
+      propertyPath: MaxPowerUpTimer
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 1385869256895879181, guid: 21d3c73c0f19e3643b704459162c5cd0, type: 3}
       propertyPath: MinigiocoCaramelle
       value: 
       objectReference: {fileID: 7701260130419095902}

@@ -1387,7 +1387,7 @@ MonoBehaviour:
   MaxCadenzaTimer: 15
   LimiteSpawnSuAsseY: 16
   LimiteSpawnOnject: 1
-  CadutaPowerUp: -2.4
+  CadutaPowerUp: -3
   Manager: {fileID: 2015523680}
 --- !u!4 &1839734153
 Transform:
@@ -1582,7 +1582,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f70dbfa8933b1fb44a4f21f9e80b7019, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SpeedObjectModificato: -2
+  SpeedObjectModificato: -2.8
   MaxTimer: 10
 --- !u!114 &2015523681
 MonoBehaviour:
@@ -1596,7 +1596,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d19ae427736b8fd40854174445f44f18, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SpeedObject: -1
+  SpeedObject: -3
   Manager: {fileID: 2015523680}
 --- !u!114 &2015523682
 MonoBehaviour:

@@ -4,16 +4,15 @@ using UnityEngine;
 
 public class PgcaramelleMovement : MonoBehaviour
 {
-    private float startPosX;
-    private float startPosY;
     private bool isBeingHeld = false;
     public GameObject MinigiocoCaramelle;
     public GameObject SpawnCaramelle;
     public GameObject GameOver;
-    private bool SwitchScale = false;
-    public float MaxSwitchTimer;
-    private float SwitchTimer;
+    private bool PowerUp = false;
+    public float MaxPowerUpTimer;
+    private float PowerUpTimer;
     public ScoreCaramelle Manager;
+    [SerializeField] private float IncrementoScore;
     [SerializeField] private AudioSource AudioGameOver;
     [SerializeField] private AudioSource AudioLivello;
     [SerializeField] private AudioSource AudioMorso;
@@ -36,13 +35,13 @@ public class PgcaramelleMovement : MonoBehaviour
             this.gameObject.transform.localPosition = new Vector3(mousePos.x, mousePos.y, 0);
         }
 
-        if(SwitchScale == true)
+        if(PowerUp == true)
         {
-            SwitchTimer = SwitchTimer - Time.deltaTime;
-            if(SwitchTimer <= 0)
+            PowerUpTimer = PowerUpTimer - Time.deltaTime;
+            if(PowerUpTimer <= 0)
             {
-                transform.localScale = new Vector3(0.1f, 0.1f, 0);
-                SwitchScale = false;
+                IncrementoScore = IncrementoScore - 1;
+                PowerUp = false;
             }
         }
     }
@@ -63,7 +62,7 @@ public class PgcaramelleMovement : MonoBehaviour
         if(col.gameObject.tag == "Caramella")
         {
             AudioMorso.Play();
-            Manager.TotScore = Manager.TotScore + 1;
+            Manager.TotScore = Manager.TotScore + IncrementoScore;
             GestioneProgressione.ValoreAttualeProgressione = GestioneProgressione.ValoreAttualeProgressione + 1;
             PlayerPrefs.SetFloat("Progressi", GestioneProgressione.ValoreAttualeProgressione);
         }
@@ -79,9 +78,9 @@ public class PgcaramelleMovement : MonoBehaviour
         else if(col.gameObject.tag == "PowerUp")
         {
             AudioPowerUp.Play();
-            transform.localScale = new Vector3(0.11f, 0.11f, 0);
-            SwitchTimer = MaxSwitchTimer;
-            SwitchScale = true;
+            IncrementoScore = IncrementoScore + 1;
+            PowerUpTimer = MaxPowerUpTimer;
+            PowerUp = true;
         }
     }
     private void OnMouseUp()

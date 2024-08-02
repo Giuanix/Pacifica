@@ -4,6 +4,14 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 public class MenuPrincipale : MonoBehaviour
 {
+    /*variabili che contengono tutte le schermate di gioco da gestire tramite i pulsanti
+    1) menu iniziale
+    2) menu opzioni
+    3) menu del record score
+    4) menu della scleta del gioco
+    5) menu del minigioco della cassa
+    6) menu del minigioco delle caramelle
+    7) menu del minigioco del ping pong*/
     [SerializeField] private GameObject MenuIniziale;
     [SerializeField] private GameObject MenuOpzioni;
     [SerializeField] private GameObject MenuScore;
@@ -11,7 +19,13 @@ public class MenuPrincipale : MonoBehaviour
     [SerializeField] private GameObject MinigiocoCassa;
     [SerializeField] private GameObject MinigiocoCaramelle;
     [SerializeField] private GameObject MinigiocoPingPong;
+
+    /*variabili contenenti le clip audio, di seguito i crediti:
+    Audio click del bottone: https://freesound.org/people/javieralejp2/sounds/658594/ */
     [SerializeField] private AudioSource ClicBotton;
+
+    /*le funzioni seguenti geastiscono i pulsanti presenti nel gioco:
+    il nome della funzione descrive l'azione da essa compiuta o il menu a cui fa riferimento*/
     public void Gioca()
     {
         MenuIniziale.SetActive(false);

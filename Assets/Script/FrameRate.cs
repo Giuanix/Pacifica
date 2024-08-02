@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class FrameRate : MonoBehaviour
 {
-    // Start is called before the first frame update
+    //funzione per settare il frame rate a 120
     void Start()
     {
         Application.targetFrameRate = 120;

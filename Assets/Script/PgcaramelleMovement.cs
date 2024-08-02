@@ -8,6 +8,7 @@ public class PgcaramelleMovement : MonoBehaviour
     public GameObject MinigiocoCaramelle;
     public GameObject SpawnCaramelle;
     public GameObject GameOver;
+    public GameObject x2;
     private bool PowerUp = false;
     public float MaxPowerUpTimer;
     private float PowerUpTimer;
@@ -42,6 +43,7 @@ public class PgcaramelleMovement : MonoBehaviour
             {
                 IncrementoScore = IncrementoScore - 1;
                 PowerUp = false;
+                x2.SetActive(false);
             }
         }
     }
@@ -81,6 +83,7 @@ public class PgcaramelleMovement : MonoBehaviour
             IncrementoScore = IncrementoScore + 1;
             PowerUpTimer = MaxPowerUpTimer;
             PowerUp = true;
+            x2.SetActive(true);
         }
     }
     private void OnMouseUp()

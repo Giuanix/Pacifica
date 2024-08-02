@@ -4,12 +4,16 @@ using UnityEngine;
 
 public class Drag : MonoBehaviour
 {
-    private float startPosX;
-    private float startPosY;
+    //Variabile che disattiva il drag quando non vi sono interazioni
     private bool isBeingHeld = false;
 
     void Update()
     {
+        /*quando isBeingHeld è vero:
+        1) Viene creato un vector3 di nome mousePos
+        2) mousePos sarà uguale alla posizione corrente del punto cliccato
+        3) tramite la camera viene rilevata la posizione nello schermo del punto cliccato
+        4) se un oggetto viene cliccato la sua posizione diventerà uguale a quella del punto cliccato fino al rilascio*/
         if(isBeingHeld == true)
         {
             Vector3 mousePos;
@@ -21,6 +25,11 @@ public class Drag : MonoBehaviour
     }
     private void OnMouseDown()
     {
+        /*quando il dito clicca un punto:
+        1) Viene creato un vector3 di nome mousePos
+        2) mousePos sarà uguale alla posizione corrente del punto cliccato
+        3) tramite la camera viene rilevata la posizione nello schermo del punto cliccato
+        4) viene settato is BeingHeld a vero in modo da trascinare  gli oggetti */
         if(Input.GetMouseButtonDown(0))
         {
             Vector3 mousePos;
@@ -31,6 +40,7 @@ public class Drag : MonoBehaviour
         } 
     }
 
+    //quando non viene più cliccato un punto is BeingHeld vine esettata a falsa cosi da smettere di trascinare  eventuali oggetti
     private void OnMouseUp()
     {
         isBeingHeld = false;

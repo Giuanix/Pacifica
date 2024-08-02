@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 public class GestioneProgressione : MonoBehaviour
 {
+    
     [SerializeField] private Sprite SpriteMinigiocoCaramelleOn;
     [SerializeField] private Sprite SpriteMinigiocoCaramelleOff;
     [SerializeField] private Sprite SpriteMinigiocoPingPongOn;
